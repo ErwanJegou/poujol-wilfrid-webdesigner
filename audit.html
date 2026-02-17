@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit du site wilfridpoujol-webdesigner.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .dial {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#4a90e2 var(--p), #e0e0e0 0);
+        }
+         .dial::before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background: white;
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+        }
+         h1, h2, h3 { font-weight: 700; }
+         @media print {
+             body * {
+                 visibility: hidden;
+             }
+             #print-section, #print-section * {
+                 visibility: visible;
+             }
+             #print-section {
+                 position: absolute;
+                 left: 0;
+                 top: 0;
+                 width: 100%;
+            }
+            .no-print { display: none; }
+         }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="print-section" class="container mx-auto p-4 md:p-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex justify-between items-start mb-8">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Rapport d'Audit</h1>
+                    <p class="text-gray-500">Site analysé : wilfridpoujol-webdesigner.com</p>
+                </div>
+                <img src="https://wilfridpoujol-webdesigner.com/wp-content/uploads/2024/11/Logo-n%C2%B01-sans-ariere-plan-560-x560-recadre-e1732141049850.png" alt="Logo" class="h-16 w-16">
+            </div>
+
+            <!-- Global Score -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl mb-4">Score Global</h2>
+                <div class="dial mx-auto flex items-center justify-center" style="--p:48%">
+                    <span class="text-4xl font-bold z-10">48<span class="text-2xl">/100</span></span>
+                </div>
+            </div>
+
+            <!-- Detailed Scores -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-red-100 border border-red-200 p-4 rounded-lg text-center">
+                    <h3 class="font-bold">Performance</h3>
+                    <p class="text-3xl font-bold text-red-600">55/100</p>
+                </div>
+                 <div class="bg-yellow-100 border border-yellow-200 p-4 rounded-lg text-center">
+                    <h3 class="font-bold">Mobile</h3>
+                    <p class="text-3xl font-bold text-yellow-600">60/100</p>
+                </div>
+                 <div class="bg-red-100 border border-red-200 p-4 rounded-lg text-center">
+                    <h3 class="font-bold">SEO</h3>
+                    <p class="text-3xl font-bold text-red-600">40/100</p>
+                </div>
+                 <div class="bg-red-100 border border-red-200 p-4 rounded-lg text-center">
+                    <h3 class="font-bold">Design & UX</h3>
+                    <p class="text-3xl font-bold text-red-600">40/100</p>
+                </div>
+            </div>
+
+             <!-- Shocking Stats -->
+            <div class="grid md:grid-cols-2 gap-4 text-center mb-12">
+                <div class="bg-gray-800 text-white p-4 rounded-lg">
+                    <p class="text-3xl font-bold">53%</p>
+                    <p>des utilisateurs quittent un site s'il met plus de 3 secondes à charger.</p>
+                </div>
+                 <div class="bg-gray-800 text-white p-4 rounded-lg">
+                    <p class="text-3xl font-bold">70%</p>
+                    <p>des recherches Google se font désormais sur mobile.</p>
+                </div>
+            </div>
+
+            <!-- Analysis -->
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><svg class="w-6 h-6 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" /></svg>Problèmes Critiques</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li><span class="font-bold">Vitesse :</span> Temps de chargement trop long à cause de la technologie WordPress et d'images non optimisées.</li>
+                         <li><span class="font-bold">SEO :</span> Manque cruel de balises (titres, méta-descriptions..) et d'optimisations techniques pour les moteurs de recherche.</li>
+                         <li><span class="font-bold">Design :</span> Apparence générique basée sur un thème, pas d'identité visuelle forte pour se démarquer.</li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center"><svg class="w-6 h-6 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>Points Forts</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Le message est clair et la proposition de valeur est compréhensible.</li>
+                        <li>La démarche de travail est bien expliquée.</li>
+                         <li>Les coordonnées de contact sont accessibles.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Recommendations -->
+             <div>
+                    <h3 class="text-xl font-bold mb-4">Recommandations pour un Impact Business Immédiat</h3>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                        <li><span class="font-bold">Refonte complète en site statique (HTML/CSS) :</span> Diviser le temps de chargement par 10, améliorer le SEO et l'expérience utilisateur.</li>
+                         <li><span class="font-bold">Optimisation SEO Poussée :</span> Intégrer les bonnes pratiques (Schema.org, Open Graph) pour apparaître plus haut sur Google.</li>
+                         <li><span class="font-bold">Création d'un design professionnel et moderne :</span> Renforcer la confiance et l'image de marque pour convertir plus de visiteurs en clients.</li>
+                    </ol>
+            </div>
+            
+            <!-- Before/After -->
+            <div class="mt-12">
+                 <h2 class="text-2xl text-center mb-8">Comparaison Avant / Après</h2>
+                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                     <div class="border-4 border-red-500 rounded p-4 text-center">
+                         <h3 class="font-bold text-red-500 mb-2">Avant (Site actuel)</h3>
+                         <ul class="text-gray-600">
+                             <li>- Lent & lourd</li>
+                             <li>- Invisible sur Google</li>
+                             <li>- Design amateur</li>
+                             <li>- Taux de rebond élevé</li>
+                         </ul>
+                     </div>
+                     <div class="border-4 border-green-500 rounded p-4 text-center">
+                         <h3 class="font-bold text-green-500 mb-2">Après (Nouveau site)</h3>
+                         <ul class="text-gray-600">
+                            <li>+ Ultra-rapide</li>
+                             <li>+ Optimisé pour le SEO</li>
+                             <li>+ Design moderne et pro</li>
+                             <li>+ Plus de contacts clients</li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+
+        </div>
+            <div class="text-center mt-8 no-print">
+                 <button onclick="window.print()" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">Télécharger le rapport en PDF</button>
+            
+                 <a href="index.html" class="block mt-4 text-blue-600 hover:underline">Voir le nouveau site proposé</a>
+            </div>
+    </div>
+</body>
+</html>
